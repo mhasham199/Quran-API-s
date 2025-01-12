@@ -70,3 +70,7 @@ async def get_translation(sura_id: int):
 
 # To run this code, save it as main.py and run the following command:
 # uvicorn main:app --reload
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
